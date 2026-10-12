@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbosa · DevOps Engineer</title>
+  <meta name="description" content="Portfolio of a DevOps / Platform engineer. Self-hosted on a homelab k3s cluster.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top"><span class="prompt">~$</span> <span id="nav-name">barbosa</span><span class="cursor">_</span></a>
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">This site</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow mono">// hello, world</p>
+      <h1>Hi, I'm <span class="glow-green" id="name">Barbosa</span>.</h1>
+      <h2 class="glow-purple" id="title">DevOps / Software Engineer</h2>
+      <p class="lead" id="summary"></p>
+      <div class="terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span><em class="mono">homelab — bash</em></div>
+        <pre class="mono" id="terminal-text"></pre>
+      </div>
+      <div class="hero-links" id="links"></div>
+    </section>
+
+    <section id="skills">
+      <h3 class="section-title"><span class="mono">01.</span> Skills</h3>
+      <div class="grid skills" id="skills-list"></div>
+    </section>
+
+    <section id="experience">
+      <h3 class="section-title"><span class="mono">02.</span> Experience</h3>
+      <div class="timeline" id="experience-list"></div>
+    </section>
+
+    <section id="projects">
+      <h3 class="section-title"><span class="mono">03.</span> Projects</h3>
+      <div class="grid" id="projects-list"></div>
+    </section>
+
+    <section id="stack">
+      <h3 class="section-title"><span class="mono">04.</span> How this site is built</h3>
+      <p class="muted">This page isn't hosted on a website builder. It runs on a laptop in my home, and every push to GitHub deploys it automatically.</p>
+      <ol class="pipeline mono">
+        <li><span>git push</span></li>
+        <li><span>GitHub Actions</span><small>test · build · scan</small></li>
+        <li><span>GHCR</span><small>container image</small></li>
+        <li><span>Argo CD</span><small>GitOps sync</small></li>
+        <li><span>k3s</span><small>Ubuntu Server laptop</small></li>
+      </ol>
+      <p class="status mono">API status: <span id="api-status" class="dot">checking…</span></p>
+    </section>
+
+    <section id="contact">
+      <h3 class="section-title"><span class="mono">05.</span> Contact</h3>
+      <p class="muted">Looking for improviment always.</p>
+      <div class="hero-links" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="mono muted">built with FastAPI · served from my homelab · <span id="year"></span></footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

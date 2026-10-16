@@ -28,6 +28,9 @@ clean:
 	find . -name __pycache__ -type d -prune -exec rm -rf {} +
 	rm -rf .pytest_cache
 
+lint:
+	$(BIN)/ruff check .
+
 docker-build:
 	docker build -t $(IMAGE) .
 

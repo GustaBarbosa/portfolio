@@ -32,11 +32,11 @@ EXPERIENCE = [
         "role": "IT Infrastructure Intern",
         "period": "Aug 2026 – Present",
         "highlights": [
-            "Configured the company's OPNsense firewall, segmenting the network into 10 VLANs "
-            "by function and risk level, with default-deny rules between them.",
+            ("Configured the company's OPNsense firewall, segmenting the network into 10 VLANs "
+            "by function and risk level, with default-deny rules between them."),
             "Set up site-to-site VPNs with NetBird (WireGuard) to connect sites securely.",
-            "Helped build the company data centre: rack layout, power distribution and "
-            "structured cabling (copper and fibre).",
+            ("Helped build the company data centre: rack layout, power distribution and "
+            "structured cabling (copper and fibre)."),
             "Tested Wazuh (SIEM/XDR) for central log collection and threat detection.",
             "Documented network and hardware assets in NetBox.",
             "Developed internal web apps with Python (FastAPI) and React.",
